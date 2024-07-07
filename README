@@ -1,0 +1,55 @@
+# Room Allocation Web Application
+
+This project is a web application to facilitate digitalizing the hospitality process for group accommodation. The application allows users to upload two CSV files to efficiently allocate rooms in hostels while ensuring group members with the same ID stay together and adhere to hostel capacities and gender-specific accommodations.
+
+## Features
+
+- Upload CSV files for group information and hostel information.
+- Allocate rooms based on group size, gender, and room capacity.
+- Download the allocation result as a CSV file.
+
+## Technologies Used
+
+- Flask (Backend)
+- Pandas (Data processing)
+- HTML, CSS, Bootstrap (Frontend)
+
+## How to Run
+
+1. Clone the repository:
+    ```bash
+    git clone <your_github_repository_url>
+    cd room_allocation
+    ```
+
+2. Create a virtual environment and install dependencies:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    pip install Flask pandas
+    ```
+
+3. Run the Flask application:
+    ```bash
+    flask run
+    ```
+
+4. Open `http://127.0.0.1:5000/` in your web browser to access the application.
+
+## Sample CSV Files
+
+Place your sample CSV files in the `data` directory:
+- `group_info.csv`
+- `hostel_info.csv`
+
+## Room Allocation Logic
+
+The room allocation logic ensures:
+- Members of the same group (same ID) stay in the same room as much as possible.
+- Boys and girls stay in their respective hostels.
+- Room capacity is not exceeded.
+
+## Submission
+
+- Submit the public GitHub repository link in the provided Google form.
+
